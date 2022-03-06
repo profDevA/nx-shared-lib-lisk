@@ -1,0 +1,28 @@
+{
+  "root": "apps/lisk-react-e2e",
+  "sourceRoot": "apps/lisk-react-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/lisk-react-e2e/cypress.json",
+        "devServerTarget": "lisk-react:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "lisk-react:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/lisk-react-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["lisk-react"]
+}

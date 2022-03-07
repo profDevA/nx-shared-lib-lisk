@@ -27,7 +27,7 @@ export class UIElement extends HTMLElement {
   }
 
   showText() {
-    
+
     alert(`Received object: ${JSON.stringify(this._value)}`);
     this.dispatchEvent(
       new CustomEvent<{ value: { text: string } }>('clicked', {

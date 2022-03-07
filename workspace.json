@@ -4,6 +4,7 @@
     "lisk-angular": "apps/lisk-angular",
     "lisk-angular-e2e": "apps/lisk-angular-e2e",
     "lisk-react": "apps/lisk-react",
-    "lisk-react-e2e": "apps/lisk-react-e2e"
+    "lisk-react-e2e": "apps/lisk-react-e2e",
+    "ui": "libs/ui"
   }
 }

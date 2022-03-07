@@ -1,5 +1,6 @@
 import { StrictMode } from 'react';
 import * as ReactDOM from 'react-dom';
+import '@lisktest/ui';
 
 import App from './app/app';
 

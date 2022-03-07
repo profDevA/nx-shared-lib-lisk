@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'lisk-angular';
+
+  value = {
+    text: 'text in angular component'
+  }
+
+  clicked(event: Event) {
+    console.log(event)
+  }
 }

@@ -1,6 +1,4 @@
-import { useRef, useEffect, ReactEventHandler } from 'react';
-import styles from './app.module.css';
-import NxWelcome from './nx-welcome';
+import { useRef, useEffect } from 'react';
 import { UIElement } from '@lisktest/ui';
 
 export function App() {
@@ -16,7 +14,6 @@ export function App() {
 
   useEffect(() => {
     if (uiel.current) {
-      uiel.current.value = value;
       uiel.current.addEventListener('clicked', onClick);
     }
     return () => {
@@ -30,7 +27,7 @@ export function App() {
     <div className="flex justify-center pt-10">
       <div className="p-5 max-w-sm text-center border rounded-lg shadow-md">
         <h1 className="text-4xl text-green-800">React App</h1>
-        <ui-element ref={uiel} onClicked={onClick}></ui-element>
+        <ui-element ref={uiel} data-value={JSON.stringify(value)} onClicked={onClick}></ui-element>
       </div>
     </div>
   );

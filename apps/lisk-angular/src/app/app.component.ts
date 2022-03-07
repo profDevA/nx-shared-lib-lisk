@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'lisk-angular';
 
+  JSON = JSON;
+
   value = {
     text: 'text in angular component'
   }

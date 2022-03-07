@@ -1,6 +1,6 @@
 <div class="flex justify-center pt-10">
   <div class="p-5 max-w-sm text-center border rounded-lg shadow-md">
-    <h1 class="text-4xl text-green-800">Angular App</h1>
-    <ui-element [value]="value" (clicked)="clicked($event)"></ui-element>
+    <h1 class="text-4xl text-green-800 mb-4">Angular App</h1>
+    <ui-element [attr.data-value]="JSON.stringify(value)" (clicked)="clicked($event)"></ui-element>
   </div>
 </div>
